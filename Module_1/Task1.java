@@ -12,20 +12,30 @@ package com.teachmeskills.homework2;
 public class Task1 {
 
     public static void main(String[] args) {
-        int value = 10;
+        int value = -896;
 
-        if (value / 10 == 0 && value > 0) {
-            System.out.println(value + " - однозначное положительное число");
-        } else if (value / 10 == 0 && value < 0) {
-            System.out.println(value + " - однозначное отрицательное число");
-        } else if (value / 100 == 0 && value > 0) {
-            System.out.println(value + " - двухзначное положительное число");
-        } else if (value / 100 == 0 && value < 0) {
-            System.out.println(value + " - двухзначное отрицательное число");
-        } else if (value / 1000 == 0 && value > 0) {
-            System.out.println(value + " - трехзначное положительное число");
-        } else if (value / 1000 == 0 && value < 0) {
-            System.out.println(value + " - трехзначное отрицательное число");
+        if (value > 0) {
+            if (value / 10 == 0) {
+                System.out.println(value + " - однозначное положительное число");
+            } else if (value / 100 == 0) {
+                System.out.println(value + " - двухзначное положительное число");
+            } else {
+                System.out.println(value + " - трехзначное и более положительное число");
+            }
+        }
+
+        if (value < 0) {
+            if (value / 10 == 0) {
+                System.out.println(value + " - однозначное отрицательное число");
+            } else if (value / 100 == 0) {
+                System.out.println(value + " - двухзначное отрицательное число");
+            } else {
+                System.out.println(value + " - трехзначное и более отрицательное число");
+            }
+        }
+
+        if (value == 0) {
+            System.out.println(value + " число равно 0");
         }
     }
 }

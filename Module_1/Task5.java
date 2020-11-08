@@ -7,17 +7,29 @@ public class Task5 {
 
     public static void main(String[] args) {
         int a = 10;
-        int b = -17;
-        int c = 9;
+        int b = -19;
+        int c = 0;
+        int negativeCount = 0;
+        int positiveCount = 0;
 
-        if (a > 0 && b > 0 && c > 0) {
-            System.out.println("Положительных чисел: " + 3 + ", отрицательных чисел: " + 0);
-        } else if ((a > 0 && b > 0 && c < 0) || (a > 0 && b < 0 && c > 0) || (a < 0 && b > 0 && c > 0)) {
-            System.out.println("Положительных чисел: " + 2 + ", отрицательных чисел: " + 1);
-        } else if ((a > 0 && b < 0 && c < 0) || (a < 0 && b < 0 && c > 0) || (a < 0 && b > 0 && c < 0)) {
-            System.out.println("Положительных чисел: " + 1 + ", отрицательных чисел: " + 2);
-        } else {
-            System.out.println("Положительных чисел: " + 0 + ", отрицательных чисел: " + 3);
+        if (a > 0) {
+            positiveCount++;
+        } else if (a < 0) {
+            negativeCount++;
         }
+
+        if (b > 0) {
+            positiveCount++;
+        } else if (b < 0) {
+            negativeCount++;
+        }
+
+        if (c > 0) {
+            positiveCount++;
+        } else if (c < 0) {
+            negativeCount++;
+        }
+
+        System.out.println("Количество положительных чисел: " + positiveCount + ", отрицательных: " + negativeCount);
     }
 }

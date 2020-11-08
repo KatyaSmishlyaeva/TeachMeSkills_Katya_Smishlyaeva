@@ -8,14 +8,14 @@ package com.teachmeskills.homework2;
 public class Task3 {
 
     public static void main(String[] args) {
-        int number = 10;
+        int number = 0;
 
         if (number > 0) {
-            System.out.println("Число рано: " + (number + 1));
+            System.out.println("Число равно: " + (number + 1));
         } else if (number < 0) {
-            System.out.println("Число рано: " + (number - 2));
+            System.out.println("Число равно: " + (number - 2));
         } else {
-            System.out.println("Число рано: " + 10);
+            System.out.println("Число равно: " + 10);
         }
     }
 }
