@@ -27,15 +27,12 @@ public class Task3 {
 
     public static int getSecondMaxValue(int[] values) {
         int maxValue = values[0];
-        for (int i = 0; i < values.length; i++) {
-            if (values[i] > maxValue) {
-                maxValue = values[i];
-            }
-        }
-
         int maxSecondValue = values[0];
         for (int i = 0; i < values.length; i++) {
-            if (maxSecondValue < maxValue && values[i] > maxSecondValue && values[i] != maxValue) {
+            if (values[i] > maxValue) {
+                maxSecondValue = maxValue;
+                maxValue = values[i];
+            } else if (values[i] > maxSecondValue && values[i] != maxValue) {
                 maxSecondValue = values[i];
             }
         }
