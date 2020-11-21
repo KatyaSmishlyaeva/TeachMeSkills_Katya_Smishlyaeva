@@ -25,8 +25,8 @@ public class Task4_4 {
     public static int sumEvenValuesUpside(int[][] values) {
         int sum = 0;
         for (int i = 0; i < values.length; i++) {
-            for (int j = 0; j < values.length; j++) {
-                if (j < values.length - 1 - i && values[i][j] % 2 == 0) {
+            for (int j = 0; j < values.length - 1 - i; j++) {
+                if (values[i][j] % 2 == 0) {
                     sum += values[i][j];
                 }
             }

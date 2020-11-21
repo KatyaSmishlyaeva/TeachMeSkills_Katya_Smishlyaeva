@@ -24,8 +24,8 @@ public class Task4_2 {
 
     public static void sumOddValuesUnderDiagonal(int[][] values) {
         for (int i = 0; i < values.length; i++) {
-            for (int j = 0; j < values.length; j++) {
-                if (i >= j && values[i][j] % 2 != 0) {
+            for (int j = 0; j <= i; j++) {
+                if (values[i][j] % 2 != 0) {
                     System.out.print(values[i][j] + " ");
                 }
             }
