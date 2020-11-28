@@ -21,6 +21,7 @@ public class Computer {
     private int ram;
     private int hdd;
     private FullWorkingCycles fullWorkingCycles;
+    private CPU cpu2;
     private boolean isOn = false;
     private int workingCycles = 8;
 
