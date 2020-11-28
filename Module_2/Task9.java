@@ -48,7 +48,7 @@ public class Task9 {
         int row1 = matrix1[0].length;
         int row2 = matrix2[0].length;
         int column1 = matrix1.length;
-
+   
         int[][] resultMatrix = new int[column1][row2];
         for (int i = 0; i < column1; i++) {
             for (int j = 0; j < row2; j++) {
