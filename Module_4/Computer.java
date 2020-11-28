@@ -20,8 +20,8 @@ public class Computer {
     private String cpu;
     private int ram;
     private int hdd;
-    private CPU cpu2 = new CPU();
     private FullWorkingCycles fullWorkingCycles;
+    private CPU cpu2;
     private boolean isOn = false;
     private int workingCycles = 8;
 
@@ -64,7 +64,7 @@ public class Computer {
     }
 
     public void setCpu(String cpu) {
-        for (String newCpu : cpu2.cpuList) {
+        for (String newCpu : CPU.cpuList) {
             if (newCpu == cpu) {
                 this.cpu = cpu;
                 workingCycles = fullWorkingCycles.lifeCycles(cpu);
@@ -130,6 +130,6 @@ public class Computer {
         public final static String AMD = "AMD";
         public final static String RYZEN = "RYZEN";
 
-        String[] cpuList = new String[]{INTEL_CORE, INTEL_PENTIUM, AMD, RYZEN};
+        public static String[] cpuList = new String[]{INTEL_CORE, INTEL_PENTIUM, AMD, RYZEN};
     }
 }
