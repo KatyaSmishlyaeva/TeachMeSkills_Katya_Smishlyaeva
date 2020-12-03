@@ -1,6 +1,7 @@
 package com.teachmeskills.homework6.clothes.jackets;
 
-public interface Jacket {
-    void putOn();
-    void takeOff();
+import com.teachmeskills.homework6.clothes.IClothes;
+
+public interface Jacket extends IClothes {
+
 }

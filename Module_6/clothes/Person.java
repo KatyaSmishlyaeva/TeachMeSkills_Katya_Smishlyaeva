@@ -4,7 +4,7 @@ import com.teachmeskills.homework6.clothes.jackets.*;
 import com.teachmeskills.homework6.clothes.pants.*;
 import com.teachmeskills.homework6.clothes.shoes.*;
 
-public class Person implements IPerson {
+public class Person implements IClothes {
     private Jacket jacket;
     private Pants pants;
     private Shoes shoes;
