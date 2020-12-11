@@ -14,8 +14,7 @@ public class TextFormaterRunner {
                 "They are like crocodiles. We didn’t stay there long Noon. " +
                 "We didn’t know. Maybe alligators like eating hedgehogs too! ";
 
-        Text text = new Text();
-        System.out.println(text.formatText(string));
-
+     TextFormater text = new TextFormater();
+     System.out.println(text.formatText(string));
     }
 }

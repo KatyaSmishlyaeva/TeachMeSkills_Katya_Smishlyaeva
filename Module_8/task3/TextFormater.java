@@ -2,7 +2,18 @@ package com.teachmeskills.homework8.task3;
 
 public class TextFormater {
 
-    static boolean isThreeOrFive(String str) {
+    public String formatText(String string) {
+        String[] strings = string.split("[.!?]");
+        StringBuilder stringBuilder = new StringBuilder();
+        for (String str : strings) {
+            if (isThreeOrFive(str.trim()) || isPalindrome(str.trim())) {
+                stringBuilder.append(str).append(".");
+            }
+        }
+        return stringBuilder.toString();
+    }
+
+    private boolean isThreeOrFive(String str) {
         return (wordСount(str) >= 3 && wordСount(str) <= 5);
     }
 
@@ -11,7 +22,7 @@ public class TextFormater {
         return arrayStr.length;
     }
 
-    static boolean isPalindrome(String str) {
+    private boolean isPalindrome(String str) {
         String[] arrayStr = str.split(" ");
         boolean result = false;
         for (int i = 0, j = 0; i < arrayStr.length; i++) {
