@@ -21,17 +21,12 @@ public class Car {
     public Car() {
     }
 
-    public void start() {
+    public void start() throws CarCanNotStartException {
         int value = random();
-        try {
-            if (value % 2 != 0) {
-                System.out.println("Автомобиль " + getBrand() + " завелся.");
-            } else {
-                throw new CarCanNotStartException("Автомобиль " + getBrand() + " не может завестись.");
-            }
-        } catch (CarCanNotStartException exception) {
-            System.out.println(exception.getMessage());
-            start();
+        if (value % 2 != 0) {
+            System.out.println("Автомобиль " + getBrand() + " завелся.");
+        } else {
+            throw new CarCanNotStartException("Автомобиль " + getBrand() + " не может завестись.");
         }
     }
 

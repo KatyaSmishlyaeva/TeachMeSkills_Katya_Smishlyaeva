@@ -1,54 +1,31 @@
 package com.teachmeskills.homework7.calculator;
 
-import com.teachmeskills.homework7.calculator.exception.*;
-import java.util.Scanner;
+import com.teachmeskills.homework7.calculator.exeptions.*;
 
 public class Calculator {
-    public static final String INVALID_VALUE = "Вы допустили ошибку при вводе. Попробуйте еще раз. ";
-    public static final String INPUT_NUMBER = "Введите число";
-    public static final String MENU = "Продолжить - c, основное меню - m, выйти - q";
-    public static Scanner scanner = new Scanner(System.in);
+
+    private Menu menu;
 
     public Calculator() {
+        this.menu = new Menu();
     }
 
     public void start() {
-        System.out.println("Сделайте выбор: арифметические операции - a, умножение матриц - r, выход - q.");
-        String input = scanner.nextLine();
-        switch (input.toLowerCase()) {
-            case "a":
-                new ArithmeticOperations().calculations();
+        while (true) {
+            try {
+                menu.getInput();
+            } catch (ExitException e) {
+                System.out.println("Пока...");
                 break;
-            case "r":
-                new MatrixMultiplication().calculations();
-                break;
-            case "q":
-                goodbye();
-                break;
-            default:
-                try {
-                    throw new InvalidInputException(INVALID_VALUE);
-                } catch (InvalidInputException exception) {
-                    System.out.println(exception.getMessage());
-                    start();
-                }
+            } catch (InvalidInputException e) {
+                System.err.println(e.getMessage());
+            } catch (BackToMenuException e) {
+                continue;
+            } catch (ArithmeticException ex) {
+                System.err.println(ex.getMessage());
+            } catch (CalculationException e) {
+                e.printStackTrace();
+            }
         }
-    }
-
-    void isQorM(String str) {
-        if (str.toLowerCase().equals("q")) {
-            goodbye();
-        } else if (str.toLowerCase().equals("m")) {
-            start();
-        }
-    }
-
-    void goodbye() {
-        try {
-            throw new ExitException("Пока...");
-        } catch (ExitException exception) {
-            System.out.println(exception.getMessage());
-        }
-        System.exit(0);
     }
 }

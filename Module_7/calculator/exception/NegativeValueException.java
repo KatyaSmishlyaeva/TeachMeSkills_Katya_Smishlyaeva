@@ -1,6 +1,6 @@
-package com.teachmeskills.homework7.calculator.exception;
+package com.teachmeskills.homework7.calculator.exeptions;
 
-public class NegativeValueException extends Exception {
+public class NegativeValueException extends CalculationException {
 
     public NegativeValueException(String message) {
         super(message);

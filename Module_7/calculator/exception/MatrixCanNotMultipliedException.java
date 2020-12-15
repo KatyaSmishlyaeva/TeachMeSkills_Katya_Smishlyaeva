@@ -1,6 +1,6 @@
-package com.teachmeskills.homework7.calculator.exception;
+package com.teachmeskills.homework7.calculator.exeptions;
 
-public class MatrixCanNotMultipliedException extends Exception{
+public class MatrixCanNotMultipliedException extends CalculationException {
 
     public MatrixCanNotMultipliedException(String message) {
         super(message);
