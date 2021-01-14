@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/but_task1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Введите два числа: a и b"
+        android:textSize="10sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <EditText
+        android:id="@+id/et_number1"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/but_task1" />
+
+    <EditText
+        android:id="@+id/et_number2"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintLeft_toLeftOf="@+id/et_number1"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/but_task1" />
+
+    <Button
+        android:id="@+id/but_task2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Введите три целых числа: x, y, z"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/et_number1"
+        tools:layout_editor_absoluteY="110dp" />
+
+    <EditText
+        android:id="@+id/et_x"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        app:layout_constraintHorizontal_bias="0.3"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/but_task2" />
+
+    <EditText
+        android:id="@+id/et_y"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        app:layout_constraintHorizontal_bias="0.3"
+        app:layout_constraintLeft_toLeftOf="@+id/et_x"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/but_task2" />
+
+    <EditText
+        android:id="@+id/et_z"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintLeft_toLeftOf="@+id/et_y"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/but_task2" />
+
+    <Button
+        android:id="@+id/but_task3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/et_x"
+        tools:layout_editor_absoluteY="110dp" />
+
+    <EditText
+        android:id="@+id/et_rating"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/but_task3" />
+
+    <Button
+        android:id="@+id/but_task4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/et_rating"
+        tools:layout_editor_absoluteY="110dp" />
+
+    <EditText
+        android:id="@+id/et_x1"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        app:layout_constraintHorizontal_bias="0.25"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/but_task4" />
+
+    <EditText
+        android:id="@+id/et_y1"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        app:layout_constraintHorizontal_bias="0.25"
+        app:layout_constraintLeft_toLeftOf="@+id/et_x1"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/but_task4" />
+
+    <EditText
+        android:id="@+id/et_x2"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        app:layout_constraintHorizontal_bias="0.3"
+        app:layout_constraintLeft_toLeftOf="@+id/et_y1"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/but_task4" />
+
+    <EditText
+        android:id="@+id/et_y2"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintLeft_toLeftOf="@+id/et_x2"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/but_task4" />
+
+    <Button
+        android:id="@+id/but_task5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Сумма четных чисел от 1 до 99"
+        android:textSize="10sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_y2" />
+
+    <Button
+        android:id="@+id/but_task6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/but_task5" />
+
+    <EditText
+        android:id="@+id/et_value"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/but_task6" />
+
+    <Button
+        android:id="@+id/but_task7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_value" />
+
+    <EditText
+        android:id="@+id/et_value2"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/but_task7" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
