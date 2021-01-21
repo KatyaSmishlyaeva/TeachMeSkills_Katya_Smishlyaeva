@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.smishlyaevakatya_android.homework17.MyTimer
+import com.example.smishlyaevakatya_android.homework18.Harvesting
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -13,6 +14,11 @@ class MainActivity : AppCompatActivity() {
 
         btn_hw17.setOnClickListener {
             val intent = Intent(this, MyTimer::class.java)
+            startActivity(intent)
+        }
+
+        btn_hw18.setOnClickListener {
+            val intent = Intent(this, Harvesting::class.java)
             startActivity(intent)
         }
     }
