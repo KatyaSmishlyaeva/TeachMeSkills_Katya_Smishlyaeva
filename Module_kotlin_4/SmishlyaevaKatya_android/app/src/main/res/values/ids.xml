@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="tv_time" type="id" />
+    <item name="btn_back" type="id" />
+    <item name="btn_start" type="id" />
+    <item name="et_time" type="id" />
+    <item name="tv_enter_time" type="id" />
+    <item name="btn_pause" type="id" />
+    <item name="btn_stop" type="id" />
+</resources>
