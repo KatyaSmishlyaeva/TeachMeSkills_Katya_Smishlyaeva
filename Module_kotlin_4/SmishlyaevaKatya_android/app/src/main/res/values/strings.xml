@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">SmishlyaevaKatya_android</string>
+    <string name="homework_17">Homework 17</string>
+    <string name="homework_18">Homework 18</string>
+    <string name="homework_20">Homework 20</string>
+    <string name="start">Start</string>
+    <string name="start_lifecycle">Start Lifecycle</string>
+    <string name="view_model">Start ViewModel</string>
+    <string name="start_timer">Start Timer</string>
 </resources>
