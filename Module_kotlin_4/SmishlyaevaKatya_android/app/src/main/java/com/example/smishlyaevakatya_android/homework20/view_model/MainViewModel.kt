@@ -8,6 +8,7 @@ class MainViewModel : ViewModel() {
     val firstName = MutableLiveData<String>()
     val lastName = MutableLiveData<String>()
     val age = MutableLiveData<Int>()
+    val name = MutableLiveData<String>()
 
     fun setup() {
         val apiFirstName = "Ivan"
@@ -16,5 +17,7 @@ class MainViewModel : ViewModel() {
         firstName.value = apiFirstName
         lastName.value = apiLastName
         age.value = apiAge
+        val apiName = "Ivanov\nIvan\n30"
+        name.value = apiName
     }
 }

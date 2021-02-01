@@ -1,12 +1,11 @@
 package com.example.smishlyaevakatya_android.homework20.lifecycle_activity
 
-import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import com.example.smishlyaevakatya_android.R
-import com.example.smishlyaevakatya_android.homework20.lifecycle.MyServerActivity
-import com.example.smishlyaevakatya_android.homework20.view_model.ViewModelActivity
+import com.example.smishlyaevakatya_android.homework20.lifecycle.ServerFragment
+import com.example.smishlyaevakatya_android.homework20.view_model.ModelFragment
 import kotlinx.android.synthetic.main.activity_my.*
 
 class MyActivity : AppCompatActivity() {
@@ -18,19 +17,31 @@ class MyActivity : AppCompatActivity() {
         setContentView(R.layout.activity_my)
 //        finish()
         Log.i(tag, "onCreate")
+
+        val valueSecond = MySecondFragment()
+        val valueServer = ServerFragment()
+        val valueModel = ModelFragment()
+
+
         btn_start_onCreate.setOnClickListener {
-            val intent = Intent(this, MySecondActivity::class.java)
-            startActivity(intent)
+            supportFragmentManager.beginTransaction()
+                .replace(R.id.fr_container, valueSecond)
+                .addToBackStack(null)
+                .commit()
         }
 
         btn_start_lifecycle.setOnClickListener {
-            val intent = Intent(this, MyServerActivity::class.java)
-            startActivity(intent)
+            supportFragmentManager.beginTransaction()
+                .replace(R.id.fr_container, valueServer)
+                .addToBackStack(null)
+                .commit()
         }
 
         btn_start_view_model.setOnClickListener {
-            val intent = Intent(this, ViewModelActivity::class.java)
-            startActivity(intent)
+            supportFragmentManager.beginTransaction()
+                .replace(R.id.fr_container, valueModel)
+                .addToBackStack(null)
+                .commit()
         }
     }
 
