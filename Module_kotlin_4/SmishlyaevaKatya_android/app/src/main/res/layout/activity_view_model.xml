@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".homework20.view_model.ViewModelActivity">
+    tools:context=".homework20.view_model.MyModelActivity">
 
     <TextView
         android:id="@+id/tv_first_name"
