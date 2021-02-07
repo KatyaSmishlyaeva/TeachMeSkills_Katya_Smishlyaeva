@@ -19,4 +19,18 @@
     <string name="homework_19">HomeWork19</string>
     <string name="start_server">Start MyServer</string>
     <string name="start_model">Start ViewModel</string>
+    <string name="homework_22">Homework 22</string>
+    <string name="login">Login</string>
+    <string name="avatars" translatable="false">avatars</string>
+    <string name="password">Password</string>
+    <string name="enter">Enter</string>
+    <string name="enter_login">enter login here</string>
+    <string name="enter_password">enter password here</string>
+    <string name="sign_in">Sign in</string>
+    <string name="date">"date of birth "</string>
+    <string name="surname">surname</string>
+    <string name="name">name</string>
+    <string name="mail">e-mail</string>
+    <string name="homework_23">Homework 23</string>
+    <string name="in_stock">in stock</string>
 </resources>

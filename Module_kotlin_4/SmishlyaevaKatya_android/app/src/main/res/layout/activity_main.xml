@@ -10,7 +10,6 @@
         android:id="@+id/btn_hw17"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:shadowColor="@color/teal_700"
         android:text="@string/homework_17"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -22,26 +21,45 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/homework_18"
-        app:layout_constraintTop_toBottomOf="@+id/btn_hw17"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent" />
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_hw17" />
 
     <Button
         android:id="@+id/btn_hw19"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/homework_19"
-        app:layout_constraintTop_toBottomOf="@+id/btn_hw18"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent" />
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_hw18" />
 
     <Button
         android:id="@+id/btn_hw20"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/homework_20"
-        app:layout_constraintTop_toBottomOf="@+id/btn_hw19"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent" />
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_hw19" />
+
+    <Button
+        android:id="@+id/btn_hw22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/homework_22"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_hw20" />
+
+    <Button
+        android:id="@+id/btn_hw23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/homework_23"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_hw22" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
