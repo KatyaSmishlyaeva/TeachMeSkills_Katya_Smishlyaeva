@@ -9,7 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.SmishlyaevaKatya_android">
-        <activity android:name=".timer.TimerActivity"></activity>
+        <activity android:name=".homework22.LoginActivity"/>
         <activity android:name=".homework19.FlagsActivity" />
         <activity android:name=".homework20.view_model.MyModelActivity" />
         <activity android:name=".homework20.lifecycle.MyServerActivity" />
