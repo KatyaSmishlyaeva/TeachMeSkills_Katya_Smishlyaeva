@@ -31,4 +31,6 @@
     <string name="surname">surname</string>
     <string name="name">name</string>
     <string name="mail">e-mail</string>
+    <string name="homework_23">Homework 23</string>
+    <string name="in_stock">in stock</string>
 </resources>
