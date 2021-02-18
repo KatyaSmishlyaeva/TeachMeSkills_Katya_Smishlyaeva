@@ -33,4 +33,11 @@ class MainActivity : AppCompatActivity() {
             nav_view.startAnimation(it)
         }
     }
+
+    inline fun startNewFragment(fragment: Fragment) {
+        supportFragmentManager.beginTransaction()
+            .replace(R.id.nav_host_fragment, fragment)
+            .addToBackStack(null)
+            .commit()
+    }
 }

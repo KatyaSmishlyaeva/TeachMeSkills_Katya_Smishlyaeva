@@ -6,4 +6,9 @@
     <string name="homework_24">Homework 24</string>
     <string name="welcome">WELCOME</string>
     <string name="back_home">Back home</string>
+    <string name="in_stock">in stock</string>
+    <string name="homework_25">Homework 25</string>
+    <string name="title_furniture">Furniture</string>
+    <string name="stock">Скад:</string>
+    <string name="description">Описание:</string>
 </resources>
