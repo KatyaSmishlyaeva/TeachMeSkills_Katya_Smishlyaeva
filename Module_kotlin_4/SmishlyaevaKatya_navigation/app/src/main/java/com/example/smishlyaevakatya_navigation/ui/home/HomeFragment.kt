@@ -1,21 +1,15 @@
 package com.example.smishlyaevakatya_navigation.ui.home
 
-import android.graphics.Color
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.view.animation.AnimationUtils
 import android.widget.Button
-import android.widget.TextView
 import androidx.fragment.app.Fragment
-import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
-import com.example.smishlyaevakatya_navigation.MainActivity
 import com.example.smishlyaevakatya_navigation.R
-import com.example.smishlyaevakatya_navigation.ui.dashboard.DashboardFragment
-import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.fragment_home.*
 
 class HomeFragment : Fragment() {
@@ -37,6 +31,7 @@ class HomeFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         AnimationUtils.loadAnimation(context, R.anim.button).also {
             btn_hm24.startAnimation(it)
+            btn_hm25.startAnimation(it)
         }
 
         AnimationUtils.loadAnimation(context, R.anim.text).also {
@@ -52,6 +47,11 @@ class HomeFragment : Fragment() {
         val button24 = view.findViewById<Button>(R.id.btn_hm24)
         button24.setOnClickListener {
             findNavController().navigate(R.id.action_navigation_home_to_navigation_dashboard2)
+        }
+
+        val button25 = view.findViewById<Button>(R.id.btn_hm25)
+        button25.setOnClickListener {
+            findNavController().navigate(R.id.action_navigation_home_to_navigation_furniture)
         }
     }
 }
