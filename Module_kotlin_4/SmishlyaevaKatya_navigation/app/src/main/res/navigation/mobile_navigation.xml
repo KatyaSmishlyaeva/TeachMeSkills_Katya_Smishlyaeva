@@ -26,7 +26,7 @@
             app:popExitAnim="@anim/to_right" />
         <action
             android:id="@+id/action_navigation_home_to_navigation_furniture"
-            app:destination="@id/navigation_furniture"
+            app:destination="@id/navigation"
             app:enterAnim="@anim/from_right"
             app:exitAnim="@anim/to_left"
             app:popEnterAnim="@anim/from_left"
@@ -47,7 +47,7 @@
             app:popExitAnim="@anim/to_left" />
         <action
             android:id="@+id/action_navigation_dashboard_to_navigation_furniture"
-            app:destination="@id/navigation_furniture"
+            app:destination="@id/navigation"
             app:enterAnim="@anim/from_right"
             app:exitAnim="@anim/to_left"
             app:popEnterAnim="@anim/from_left"
@@ -64,34 +64,73 @@
             app:destination="@id/navigation_home" />
     </fragment>
 
-    <fragment
-        android:id="@+id/navigation_furniture"
-        android:name="com.example.smishlyaevakatya_navigation.ui.homework25.FurnitureFragment"
-        android:label="@string/title_furniture"
-        tools:layout="@layout/fragment_furniture" >
+    <navigation android:id="@+id/navigation"
+        app:startDestination="@id/navigation_furniture">
+        <fragment
+            android:id="@+id/navigation_furniture"
+            android:name="com.example.smishlyaevakatya_navigation.ui.homework25.FurnitureFragment"
+            android:label="@string/title_furniture"
+            tools:layout="@layout/fragment_furniture">
+            <action
+                android:id="@+id/action_navigation_furniture_to_navigation_home"
+                app:destination="@id/navigation_home"
+                app:enterAnim="@anim/from_left"
+                app:exitAnim="@anim/to_right"
+                app:popEnterAnim="@anim/from_right"
+                app:popExitAnim="@anim/to_left" />
+            <action
+                android:id="@+id/action_navigation_furniture_to_navigation_item_furniture"
+                app:destination="@id/navigation2"
+                app:enterAnim="@anim/from_right"
+                app:exitAnim="@anim/to_left"
+                app:popEnterAnim="@anim/from_left"
+                app:popExitAnim="@anim/to_right" />
+            <argument
+                android:name="itemFurniture"
+                app:argType="com.example.smishlyaevakatya_navigation.ui.homework25.Furniture"
+                app:nullable="true"
+                android:defaultValue="@null" />
+        </fragment>
         <action
-            android:id="@+id/action_navigation_furniture_to_navigation_home"
-            app:destination="@id/navigation_home"
-            app:enterAnim="@anim/from_left"
-            app:exitAnim="@anim/to_right"
-            app:popEnterAnim="@anim/from_right"
-            app:popExitAnim="@anim/to_left" />
-        <action
-            android:id="@+id/action_navigation_furniture_to_navigation_item_furniture"
-            app:destination="@id/navigation_item_furniture"
+            android:id="@+id/action_global_insertFurnitureFragment"
+            app:destination="@id/insertFurnitureFragment"
             app:enterAnim="@anim/from_right"
             app:exitAnim="@anim/to_left"
             app:popEnterAnim="@anim/from_left"
             app:popExitAnim="@anim/to_right" />
-    </fragment>
-
+        <action
+            android:id="@+id/action_global_updateFragment"
+            app:destination="@id/updateFragment" />
+    </navigation>
+    <navigation android:id="@+id/navigation2"
+        app:startDestination="@id/navigation_item_furniture">
+        <fragment
+            android:id="@+id/navigation_item_furniture"
+            android:name="com.example.smishlyaevakatya_navigation.ui.homework25.ItemFragment"
+            android:label="@string/title_furniture"
+            tools:layout="@layout/fragment_item_new_furniture">
+            <argument
+                android:name="itemFurniture"
+                app:argType="com.example.smishlyaevakatya_navigation.ui.homework25.Furniture" />
+        </fragment>
+        <action
+            android:id="@+id/action_global_navigation"
+            app:destination="@id/navigation" />
+    </navigation>
     <fragment
-        android:id="@+id/navigation_item_furniture"
-        android:name="com.example.smishlyaevakatya_navigation.ui.homework25.ItemFragment"
-        android:label="@string/title_furniture"
-        tools:layout="@layout/frafment_item_new_furniture" >
-        <argument android:name="MyArg"
-            android:defaultValue="На складе"
-            app:argType="string" />
+        android:id="@+id/insertFurnitureFragment"
+        android:name="com.example.smishlyaevakatya_navigation.ui.homework26.InsertFurnitureFragment"
+        android:label="InsertFurnitureFragment" >
+        <action
+            android:id="@+id/action_insertFurnitureFragment_to_navigation"
+            app:destination="@id/navigation" />
+    </fragment>
+    <fragment
+        android:id="@+id/updateFragment"
+        android:name="com.example.smishlyaevakatya_navigation.ui.homework26.update.UpdateFragment"
+        android:label="UpdateFragment" >
+        <action
+            android:id="@+id/action_updateFragment_to_navigation"
+            app:destination="@id/navigation" />
     </fragment>
 </navigation>

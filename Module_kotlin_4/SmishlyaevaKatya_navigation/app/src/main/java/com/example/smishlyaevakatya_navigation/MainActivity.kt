@@ -4,12 +4,11 @@ import android.os.Bundle
 import android.view.animation.AnimationUtils
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import androidx.appcompat.app.AppCompatActivity
-import androidx.fragment.app.Fragment
 import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
-import kotlinx.android.synthetic.main.activity_main.*
+
 
 class MainActivity : AppCompatActivity() {
 
@@ -30,14 +29,8 @@ class MainActivity : AppCompatActivity() {
         navView.setupWithNavController(navController)
 
         AnimationUtils.loadAnimation(this, R.anim.alpha).also {
-            nav_view.startAnimation(it)
+            navView.startAnimation(it)
         }
-    }
 
-    inline fun startNewFragment(fragment: Fragment) {
-        supportFragmentManager.beginTransaction()
-            .replace(R.id.nav_host_fragment, fragment)
-            .addToBackStack(null)
-            .commit()
     }
 }

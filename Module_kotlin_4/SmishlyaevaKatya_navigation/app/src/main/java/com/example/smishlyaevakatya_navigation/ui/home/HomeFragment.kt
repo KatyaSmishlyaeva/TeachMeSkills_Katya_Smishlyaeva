@@ -6,11 +6,11 @@ import android.view.View
 import android.view.ViewGroup
 import android.view.animation.AnimationUtils
 import android.widget.Button
+import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import com.example.smishlyaevakatya_navigation.R
-import kotlinx.android.synthetic.main.fragment_home.*
 
 class HomeFragment : Fragment() {
 
@@ -29,18 +29,21 @@ class HomeFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        val tvWelcome = view.findViewById<TextView>(R.id.tv_welcome)
         AnimationUtils.loadAnimation(context, R.anim.button).also {
-            btn_hm24.startAnimation(it)
-            btn_hm25.startAnimation(it)
+            val button24 = view.findViewById<Button>(R.id.btn_hm24)
+            val button25 = view.findViewById<Button>(R.id.btn_hm25)
+            button24.startAnimation(it)
+            button25.startAnimation(it)
         }
 
         AnimationUtils.loadAnimation(context, R.anim.text).also {
-            tv_welcome.startAnimation(it)
+            tvWelcome.startAnimation(it)
         }
 
-        tv_welcome.setOnClickListener {
+        tvWelcome.setOnClickListener {
             AnimationUtils.loadAnimation(context, R.anim.rotate).also {
-                tv_welcome.startAnimation(it)
+                tvWelcome.startAnimation(it)
             }
         }
 
