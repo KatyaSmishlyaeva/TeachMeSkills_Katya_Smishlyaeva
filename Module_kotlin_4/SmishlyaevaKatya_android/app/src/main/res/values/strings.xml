@@ -3,12 +3,12 @@
     <string name="homework_17">Homework 17</string>
     <string name="homework_18">Homework 18</string>
     <string name="homework_20">Homework 20</string>
-    <string name="start">Старт</string>
-    <string name="start_lifecycle">Старт Lifecycle</string>
-    <string name="view_model">Старт ViewModel</string>
-    <string name="start_timer">Старт Таймера</string>
-    <string name="back">Назад</string>
-    <string name="reset">Сброс</string>
+    <string name="start">Start</string>
+    <string name="start_lifecycle">Start Lifecycle</string>
+    <string name="view_model">Start ViewModel</string>
+    <string name="start_timer">Start Timer</string>
+    <string name="back">Back</string>
+    <string name="reset">Reset</string>
     <string name="enter_time">Введите время в минутах</string>
     <string name="minsk">Минская область</string>
     <string name="potatoes">Картофель</string>
@@ -17,6 +17,7 @@
     <string name="brest">Брестская область</string>
     <string name="grodno">Гродненская область</string>
     <string name="homework_19">HomeWork19</string>
+    <string name="germany">Germany</string>
     <string name="start_server">Start MyServer</string>
     <string name="start_model">Start ViewModel</string>
     <string name="homework_22">Homework 22</string>

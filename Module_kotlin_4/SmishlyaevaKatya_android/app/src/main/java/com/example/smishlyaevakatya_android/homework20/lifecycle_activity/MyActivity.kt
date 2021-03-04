@@ -3,9 +3,10 @@ package com.example.smishlyaevakatya_android.homework20.lifecycle_activity
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import com.example.smishlyaevakatya_android.MainActivity
 import com.example.smishlyaevakatya_android.R
-import com.example.smishlyaevakatya_android.homework20.lifecycle.ServerFragment
-import com.example.smishlyaevakatya_android.homework20.view_model.ModelFragment
+import com.example.smishlyaevakatya_android.homework20.lifecycle.MyServerActivity
+import com.example.smishlyaevakatya_android.homework20.view_model.MySecondActivity
 import kotlinx.android.synthetic.main.activity_my.*
 
 class MyActivity : AppCompatActivity() {
@@ -38,10 +39,8 @@ class MyActivity : AppCompatActivity() {
         }
 
         btn_start_view_model.setOnClickListener {
-            supportFragmentManager.beginTransaction()
-                .replace(R.id.fr_container, valueModel)
-                .addToBackStack(null)
-                .commit()
+            val intent = Intent(this, MySecondActivity::class.java)
+            startActivity(intent)
         }
     }
 
