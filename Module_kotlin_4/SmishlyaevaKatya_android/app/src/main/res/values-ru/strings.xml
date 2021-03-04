@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">SmishlyaevaKatya_android</string>
+    <string name="homework_17">Домашнее задание 17</string>
+    <string name="homework_18">Домашнее задание 18</string>
+    <string name="homework_20">Домашнее задание 20</string>
+    <string name="start">Старт</string>
+    <string name="start_lifecycle">Старт Lifecycle</string>
+    <string name="view_model">Старт ViewModel</string>
+    <string name="start_timer">Старт Таймера</string>
+    <string name="back">Назад</string>
+    <string name="reset">Сброс</string>
+    <string name="enter_time">Введите время в минутах</string>
+    <string name="minsk">Минская область</string>
+    <string name="potatoes">Картофель</string>
+    <string name="cabbage">Капуста</string>
+    <string name="beet">Свекла</string>
+    <string name="brest">Брестская область</string>
+    <string name="grodno">Гродненская область</string>
+    <string name="homework_19">Домашнее задание 19</string>
+    <string name="start_server">Старт MyServer</string>
+    <string name="start_model">Старт ViewModel</string>
+    <string name="homework_22">Домашнее задание 22</string>
+    <string name="login">Логин</string>
+    <string name="password">Пароль</string>
+    <string name="enter">Ввод</string>
+    <string name="enter_login">введите логин</string>
+    <string name="enter_password">введите пароль</string>
+    <string name="sign_in">Войти</string>
+    <string name="date">"дата рождения "</string>
+    <string name="surname">фамилия</string>
+    <string name="name">имя</string>
+    <string name="mail">e-mail</string>
+    <string name="homework_23">Домашнее задание 23</string>
+    <string name="in_stock">Есть на складе</string>
+
+</resources>
