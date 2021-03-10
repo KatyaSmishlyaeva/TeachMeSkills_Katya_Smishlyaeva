@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="108dp"
-    android:padding="4dp">
+    android:padding="4dp"
+    android:id="@+id/rowLayout">
 
     <ImageView
         android:id="@+id/iv_image"

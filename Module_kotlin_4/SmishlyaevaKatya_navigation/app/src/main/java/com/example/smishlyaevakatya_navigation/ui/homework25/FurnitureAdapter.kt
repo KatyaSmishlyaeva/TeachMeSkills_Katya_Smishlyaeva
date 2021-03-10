@@ -11,7 +11,7 @@ import com.squareup.picasso.Picasso
 
 class FurnitureAdapter(
     var list: List<Furniture>,
-    var clickListener: OnItemVClickListener
+    private val delegate: (Furniture) -> Unit
 ) :
     RecyclerView.Adapter<FurnitureAdapter.ViewHolder>() {
 
@@ -22,7 +22,7 @@ class FurnitureAdapter(
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        holder.bind(list[position], clickListener)
+        holder.bind(list[position], delegate, position)
     }
 
     override fun getItemCount(): Int = list.size
@@ -34,25 +34,21 @@ class FurnitureAdapter(
         private var description = itemView.findViewById<TextView>(R.id.tv_description)
         private var stock = itemView.findViewById<TextView>(R.id.tv_available)
 
-         fun loadImageAsync(path: String) {
+        private fun loadImageAsync(path: String) {
             Picasso.get()
                 .load(path)
                 .placeholder(R.drawable.download)
                 .into(image)
         }
 
-        fun bind(furniture: Furniture, action: OnItemVClickListener) {
+        fun bind(furniture: Furniture, delegate: (Furniture) -> Unit, position: Int) {
             loadImageAsync(furniture.image)
             description.text = furniture.name
-            stock.text = if (furniture.isInStock) "Склад" else " Нету"
+            stock.text = "Склад"
 
             itemView.setOnClickListener {
-                action.onItemClick(furniture, adapterPosition)
+                delegate(furniture)
             }
         }
     }
-}
-
-interface OnItemVClickListener {
-    fun onItemClick(item: Furniture, position: Int)
 }
