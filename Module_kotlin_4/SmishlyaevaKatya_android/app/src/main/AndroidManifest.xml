@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.smishlyaevakatya_android">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,7 +11,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.SmishlyaevaKatya_android">
-        <activity android:name=".homework22.LoginActivity"/>
+        <activity android:name=".homework23.FurnitureActivity"></activity>
+        <activity android:name=".homework22.LoginActivity" />
         <activity android:name=".homework19.FlagsActivity" />
         <activity android:name=".homework20.view_model.MyModelActivity" />
         <activity android:name=".homework20.lifecycle.MyServerActivity" />

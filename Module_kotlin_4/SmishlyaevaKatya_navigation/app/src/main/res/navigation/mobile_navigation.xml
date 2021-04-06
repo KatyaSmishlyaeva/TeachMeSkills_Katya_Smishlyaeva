@@ -166,6 +166,7 @@
             app:popEnterAnim="@anim/from_right"
             app:popExitAnim="@anim/to_left" />
     </fragment>
+
     <fragment
         android:id="@+id/courseFragment"
         android:name="com.example.smishlyaevakatya_navigation.ui.homework31.CourseFragment"

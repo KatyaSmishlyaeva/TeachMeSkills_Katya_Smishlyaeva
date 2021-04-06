@@ -30,4 +30,7 @@
     <string name="surname">фамилия</string>
     <string name="name">имя</string>
     <string name="mail">e-mail</string>
+    <string name="homework_23">Домашнее задание 23</string>
+    <string name="in_stock">Есть на складе</string>
+
 </resources>

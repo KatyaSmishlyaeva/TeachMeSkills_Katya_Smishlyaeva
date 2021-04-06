@@ -8,6 +8,7 @@ import com.example.smishlyaevakatya_android.homework18.Harvesting
 import com.example.smishlyaevakatya_android.homework19.FlagsActivity
 import com.example.smishlyaevakatya_android.homework20.lifecycle_activity.MyActivity
 import com.example.smishlyaevakatya_android.homework22.LoginActivity
+import com.example.smishlyaevakatya_android.homework23.FurnitureActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -38,6 +39,11 @@ class MainActivity : AppCompatActivity() {
 
         btn_hw22.setOnClickListener {
             val intent = Intent(this, LoginActivity::class.java)
+            startActivity(intent)
+        }
+
+        btn_hw23.setOnClickListener {
+            val intent = Intent(this, FurnitureActivity::class.java)
             startActivity(intent)
         }
     }
