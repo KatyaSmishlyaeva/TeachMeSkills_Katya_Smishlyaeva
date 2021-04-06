@@ -31,6 +31,27 @@
             app:exitAnim="@anim/to_left"
             app:popEnterAnim="@anim/from_left"
             app:popExitAnim="@anim/to_right" />
+        <action
+            android:id="@+id/action_navigation_home_to_factsFragment"
+            app:destination="@id/factsFragment"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            app:popEnterAnim="@anim/from_left"
+            app:popExitAnim="@anim/to_right" />
+        <action
+            android:id="@+id/action_navigation_home_to_courseFragment"
+            app:destination="@id/courseFragment"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            app:popEnterAnim="@anim/from_left"
+            app:popExitAnim="@anim/to_right" />
+        <action
+            android:id="@+id/action_navigation_home_to_accelerometerFragment"
+            app:destination="@id/accelerometerFragment"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            app:popEnterAnim="@anim/from_left"
+            app:popExitAnim="@anim/to_right" />
     </fragment>
 
     <fragment
@@ -132,5 +153,42 @@
         <action
             android:id="@+id/action_updateFragment_to_navigation"
             app:destination="@id/navigation" />
+    </fragment>
+    <fragment
+        android:id="@+id/factsFragment"
+        android:name="com.example.smishlyaevakatya_navigation.ui.homework27.FactsFragment"
+        android:label="FactsFragment" >
+        <action
+            android:id="@+id/action_factsFragment_to_navigation_home"
+            app:destination="@id/navigation_home"
+            app:enterAnim="@anim/from_left"
+            app:exitAnim="@anim/to_right"
+            app:popEnterAnim="@anim/from_right"
+            app:popExitAnim="@anim/to_left" />
+    </fragment>
+    <fragment
+        android:id="@+id/courseFragment"
+        android:name="com.example.smishlyaevakatya_navigation.ui.homework31.CourseFragment"
+        android:label="CourseFragment" >
+        <action
+            android:id="@+id/action_courseFragment_to_navigation_home"
+            app:destination="@id/navigation_home"
+            app:enterAnim="@anim/from_left"
+            app:exitAnim="@anim/to_right"
+            app:popEnterAnim="@anim/from_right"
+            app:popExitAnim="@anim/to_left" />
+    </fragment>
+    <fragment
+        android:id="@+id/accelerometerFragment"
+        android:name="com.example.smishlyaevakatya_navigation.ui.homework32.PedometerFragment"
+        android:label="fragment_accelerometer"
+        tools:layout="@layout/fragment_pedometer" >
+        <action
+            android:id="@+id/action_accelerometerFragment_to_navigation_home"
+            app:destination="@id/navigation_home"
+            app:enterAnim="@anim/from_left"
+            app:exitAnim="@anim/to_right"
+            app:popEnterAnim="@anim/from_right"
+            app:popExitAnim="@anim/to_left" />
     </fragment>
 </navigation>
