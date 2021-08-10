@@ -31,6 +31,5 @@ class MainActivity : AppCompatActivity() {
         AnimationUtils.loadAnimation(this, R.anim.alpha).also {
             navView.startAnimation(it)
         }
-
     }
 }

@@ -1,5 +1,6 @@
 package com.example.smishlyaevakatya_navigation.ui.home
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -56,9 +57,15 @@ class HomeFragment : Fragment() {
         button25.setOnClickListener {
             findNavController().navigate(R.id.action_navigation_home_to_navigation_furniture)
         }
+
         val button27 = view.findViewById<Button>(R.id.btn_hm27)
         button27.setOnClickListener {
             findNavController().navigate(R.id.action_navigation_home_to_factsFragment)
+        }
+
+        val button32 = view.findViewById<Button>(R.id.btn_hm32)
+        button32.setOnClickListener {
+            findNavController().navigate(R.id.action_navigation_home_to_accelerometerFragment)
         }
     }
 }

@@ -15,7 +15,7 @@ interface FactsApi {
 
 }
 
-internal  fun provideApi(): FactsApi{
+internal fun provideApi(): FactsApi {
     val baseUrl = "https://cat-fact.herokuapp.com"
     val loginInterceptor = HttpLoggingInterceptor()
         .setLevel(HttpLoggingInterceptor.Level.BODY)
